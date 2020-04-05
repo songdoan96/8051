@@ -1,0 +1,142 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/17/2020  21:24:29  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\or PRINT (.\Listings\or.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\or (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         _DATA_GROUP_
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     003DH     UNIT         ?PR?LEDSANGTRAIPHAI?MAIN
+            CODE    0040H     0014H     UNIT         ?PR?VIDU?MAIN
+            CODE    0054H     000FH     UNIT         ?PR?MAIN?MAIN
+            CODE    0063H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\or (MAIN)
+
+
+SEGMENT                            DATA_GROUP 
+  +--> CALLED SEGMENT            START    LENGTH
+------------------------------------------------
+?C_C51STARTUP                    -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                    -----    -----
+  +--> ?PR?VIDU?MAIN
+  +--> ?PR?LEDSANGTRAIPHAI?MAIN
+
+?PR?LEDSANGTRAIPHAI?MAIN         0008H    0002H
+
+
+
+UNRESOLVED EXTERNAL SYMBOLS:
+   _DELAY_MS
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\or (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/17/2020  21:24:29  PAGE 2
+
+
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:0040H         PUBLIC        viDu
+  C:0054H         PUBLIC        main
+  C:0003H         PUBLIC        ledSangTraiPhai
+  -------         PROC          VIDU
+  C:0040H         LINE#         13
+  C:0040H         LINE#         14
+  C:0043H         LINE#         15
+  C:004AH         LINE#         16
+  C:004DH         LINE#         17
+  -------         ENDPROC       VIDU
+  -------         PROC          LEDSANGTRAIPHAI
+  -------         DO            
+  D:0008H         SYMBOL        i
+  D:0009H         SYMBOL        j
+  -------         ENDDO         
+  C:0003H         LINE#         20
+  C:0003H         LINE#         22
+  C:0006H         LINE#         23
+  C:0008H         LINE#         24
+  C:000FH         LINE#         25
+  C:0015H         LINE#         26
+  C:0018H         LINE#         27
+  C:0021H         LINE#         29
+  C:0024H         LINE#         30
+  C:0026H         LINE#         31
+  C:002DH         LINE#         32
+  C:0033H         LINE#         33
+  C:0036H         LINE#         34
+  C:003FH         LINE#         35
+  -------         ENDPROC       LEDSANGTRAIPHAI
+  -------         PROC          MAIN
+  C:0054H         LINE#         37
+  C:0054H         LINE#         38
+  C:0054H         LINE#         39
+  C:0057H         LINE#         40
+  C:005AH         LINE#         41
+  C:0061H         LINE#         42
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\Objects\main.obj (MAIN)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\Objects\main.obj (MAIN)
+    ADDRESS: 0048H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\Objects\main.obj (MAIN)
+    ADDRESS: 0052H
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/17/2020  21:24:29  PAGE 3
+
+
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\Objects\main.obj (MAIN)
+    ADDRESS: 000DH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\Objects\main.obj (MAIN)
+    ADDRESS: 002BH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _DELAY_MS
+    MODULE:  .\Objects\main.obj (MAIN)
+    ADDRESS: 005FH
+
+Program Size: data=11.0 xdata=0 code=111
+LINK/LOCATE RUN COMPLETE.  6 WARNING(S),  0 ERROR(S)

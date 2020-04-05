@@ -1,0 +1,5 @@
+"main.obj",
+".\UartMode1.obj",
+".\Delay.obj" 
+TO "GiaoTiepMayTinh" 
+

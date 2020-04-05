@@ -1,0 +1,4 @@
+"main.obj",
+".\delay.obj" 
+TO "ICChot74HC573" 
+RAMSIZE(256) 

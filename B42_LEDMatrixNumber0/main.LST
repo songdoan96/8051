@@ -1,0 +1,60 @@
+C51 COMPILER V9.01   MAIN                                                                  03/20/2020 19:42:17 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "main.h"
+   2          #include "../my_lib/delay.h"
+   3          
+   4          unsigned char matrix_font[10][7] = {
+   5          {0x0E, 0x11, 0x13, 0x15, 0x19, 0x11, 0x0E}, //so 0
+   6          {0x0E, 0x04, 0x04, 0x04, 0x04, 0x0C, 0x04}, //so 1
+   7          {0x1F, 0x08, 0x04, 0x02, 0x01, 0x11, 0x0E}, //so 2
+   8          {0x0E, 0x11, 0x01, 0x06, 0x02, 0x01, 0x1F}, //so 3
+   9          {0x02, 0x02, 0x1F, 0x12, 0x0A, 0x06, 0x02}, //so 4
+  10          {0x0E, 0x11, 0x01, 0x01, 0x1E, 0x10, 0x1F}, //so 5
+  11          {0x0E, 0x11, 0x11, 0x1E, 0x10, 0x11, 0x0E}, //so 6
+  12          {0x08, 0x08, 0x08, 0x04, 0x02, 0x01, 0x1F}, //so 7
+  13          {0x0E, 0x11, 0x11, 0x0E, 0x11, 0x11, 0x0E}, //so 8
+  14          {0x0E, 0x11, 0x01, 0x0F, 0x11, 0x11, 0x0E} //so 9
+  15          
+  16          };
+  17          
+  18          void main()
+  19          {
+  20   1        unsigned char i,j,dl;
+  21   1        while(1)
+  22   1        {
+  23   2          for (i = 0; i < 10; i++)
+  24   2          {
+  25   3            for (dl = 0; dl < 142; dl++)    //   lap lai vong lap  142*7 = 1000(s)
+  26   3            {
+  27   4              for(j=0; j<7; j++)
+  28   4              {
+  29   5                P2 = matrix_font[i][j];
+  30   5                P3 = 0x00;
+  31   5                delay_ms(1);
+  32   5                P3 = 0x01 << j;
+  33   5              }
+  34   4            }
+  35   3          }
+  36   2        }
+  37   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     76    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     70       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

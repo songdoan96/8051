@@ -1,0 +1,25 @@
+============ TIMER /COUNTER ================
+
++ Timer : xung nhịp bên trong IC, mạch dao động bên trong
++ Counter : bên ngoài IC, dùng đếm sự kiện bên ngoài(đếm sản phẩm)
++ Tràn (overflow) : đếm quá giá trị tối đa, lập tức về lại 0 ( 8bit : 255 = FF, 16bit: 65535 = ffff)
+
+=== TIMER : Bộ định thời ===
++ Timer1 và Timer0 có độ dài 16bit (byte thấp: Timer Low byte D0-D7 ---- byte cao: Timer High byte D8-D16) : TL0,TH0 / TL1,TH1
+
++ Thanh ghi TMOD 8bit: thiết lập chế độ làm việc cho 2 bộ timer : 4bit thấp- Timer0 / 4bit cao- Timer1
+
+	Trong 4bit đó thì : 2bit thấp - thiết lập bộ định thời ( M0 và M1)  /// 2bit cao - xác định thuật toán ( CT và GATE)
+
+
+
+
+
+
+
+
+
+
+
+
+delay_ms 11,0592: TMOD = fc66

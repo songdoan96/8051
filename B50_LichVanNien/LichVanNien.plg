@@ -1,0 +1,261 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\SongDoan\Desktop\8051\B50_LichVanNien\LichVanNien.uvproj
+Project File Date:  03/26/2020
+
+<h2>Output:</h2>
+"explorer" C:\Users\SongDoan\Desktop\8051\B50_LichVanNien\
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(39): error C202: 'BTN': undefined identifier
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+..\MY_LIB\LCD4.C(56): error C202: 'LCD_D7': undefined identifier
+..\MY_LIB\LCD4.C(57): error C202: 'LCD_D6': undefined identifier
+..\MY_LIB\LCD4.C(58): error C202: 'LCD_D5': undefined identifier
+..\MY_LIB\LCD4.C(59): error C202: 'LCD_D4': undefined identifier
+..\MY_LIB\LCD4.C(67): error C202: 'LCD_D7': undefined identifier
+..\MY_LIB\LCD4.C(68): error C202: 'LCD_D6': undefined identifier
+..\MY_LIB\LCD4.C(69): error C202: 'LCD_D5': undefined identifier
+..\MY_LIB\LCD4.C(70): error C202: 'LCD_D4': undefined identifier
+..\MY_LIB\LCD4.C(108): error C202: 'LCD_RS': undefined identifier
+..\MY_LIB\LCD4.C(109): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(117): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(118): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(122): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(123): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(127): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(128): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(136): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(137): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(155): error C202: 'LCD_RS': undefined identifier
+..\MY_LIB\LCD4.C(157): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(158): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(161): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(162): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(188): error C202: 'LCD_RS': undefined identifier
+..\MY_LIB\LCD4.C(190): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(191): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(194): error C202: 'LCD_EN': undefined identifier
+..\MY_LIB\LCD4.C(195): error C202: 'LCD_EN': undefined identifier
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+..\MY_LIB\SOFT_I2C.C(42): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(43): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(51): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(53): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(55): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(67): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(69): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(71): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(72): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(87): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(88): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(90): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(101): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(103): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(105): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(113): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(115): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(117): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(131): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(133): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(136): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(140): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(158): error C202: 'SOFT_I2C_SDA': undefined identifier
+..\MY_LIB\SOFT_I2C.C(160): error C202: 'SOFT_I2C_SCL': undefined identifier
+..\MY_LIB\SOFT_I2C.C(162): error C202: 'SOFT_I2C_SDA': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(39): error C202: 'BTN': undefined identifier
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_CUSTOM_CHR?LCD4
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_TIME?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_DATE?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_BYTES?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_READ_BYTES?RTC_DS1307
+Program Size: data=63.3 xdata=0 code=4972
+creating hex file from "LichVanNien"...
+"LichVanNien" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_CUSTOM_CHR?LCD4
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_TIME?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_DATE?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_BYTES?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_READ_BYTES?RTC_DS1307
+Program Size: data=63.3 xdata=0 code=4972
+creating hex file from "LichVanNien"...
+"LichVanNien" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_CUSTOM_CHR?LCD4
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_TIME?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_DATE?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_BYTES?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_READ_BYTES?RTC_DS1307
+Program Size: data=63.3 xdata=0 code=4962
+creating hex file from "LichVanNien"...
+"LichVanNien" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_CUSTOM_CHR?LCD4
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_TIME?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_DATE?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_BYTES?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_READ_BYTES?RTC_DS1307
+Program Size: data=63.3 xdata=0 code=4967
+creating hex file from "LichVanNien"...
+"LichVanNien" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(14): warning C280: 'Mode': unreferenced local variable
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_CUSTOM_CHR?LCD4
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_TIME?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_DATE?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_BYTES?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_READ_BYTES?RTC_DS1307
+Program Size: data=63.3 xdata=0 code=4962
+creating hex file from "LichVanNien"...
+"LichVanNien" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(14): warning C280: 'Mode': unreferenced local variable
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_CUSTOM_CHR?LCD4
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_TIME?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_DATE?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_BYTES?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_READ_BYTES?RTC_DS1307
+Program Size: data=63.3 xdata=0 code=4962
+creating hex file from "LichVanNien"...
+"LichVanNien" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_CUSTOM_CHR?LCD4
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_TIME?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_DATE?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_BYTES?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_READ_BYTES?RTC_DS1307
+Program Size: data=63.3 xdata=0 code=4965
+creating hex file from "LichVanNien"...
+"LichVanNien" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling Delay.c...
+compiling LCD4.c...
+..\my_lib\LCD4.c(37): message C320: "Lcd - Use delay method."
+compiling LunarCalendar.c...
+compiling Rtc_Ds1307.c...
+compiling Soft_I2C.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_CUSTOM_CHR?LCD4
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_TIME?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_DATE?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_WRITE_BYTES?RTC_DS1307
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DS1307_READ_BYTES?RTC_DS1307
+Program Size: data=63.3 xdata=0 code=4965
+creating hex file from "LichVanNien"...
+"LichVanNien" - 0 Error(s), 5 Warning(s).

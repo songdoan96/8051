@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\SongDoan\Desktop\8051\B53_NgatNgoai4LED\NgatNgoai_7Seg\NgatNgoai_7Seg.uvproj
+Project File Date:  03/27/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '../my_lib/Delay.h'
+MAIN.C(7): warning C280: 'i': unreferenced local variable
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=10.0 xdata=0 code=49
+creating hex file from "NgatNgoai_7Seg"...
+"NgatNgoai_7Seg" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(2): warning C318: can't open file '../my_lib/Delay.h'
+MAIN.C(10): error C141: syntax error near 'unsigned'
+MAIN.C(10): error C202: 'i': undefined identifier
+MAIN.C(13): error C202: 'i': undefined identifier
+MAIN.C(18): error C141: syntax error near '0'
+MAIN.C(20): error C141: syntax error near '<', expected ')'
+MAIN.C(23): error C141: syntax error near '}'
+MAIN.C(26): error C129: missing ';' before '--'
+compiling Delay.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(10): error C141: syntax error near 'unsigned'
+MAIN.C(10): error C202: 'i': undefined identifier
+MAIN.C(13): error C202: 'i': undefined identifier
+MAIN.C(18): error C141: syntax error near '0'
+MAIN.C(20): error C141: syntax error near '<', expected ')'
+MAIN.C(23): error C141: syntax error near '}'
+MAIN.C(26): error C129: missing ';' before '--'
+compiling Delay.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(19): error C141: syntax error near '0'
+MAIN.C(21): error C141: syntax error near '<', expected ')'
+MAIN.C(23): error C231: 'i': redefinition
+MAIN.C(24): error C141: syntax error near '}'
+MAIN.C(27): error C129: missing ';' before '--'
+compiling Delay.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=20.0 xdata=0 code=260
+creating hex file from "NgatNgoai_7Seg"...
+"NgatNgoai_7Seg" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=20.0 xdata=0 code=228
+creating hex file from "NgatNgoai_7Seg"...
+"NgatNgoai_7Seg" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=20.0 xdata=0 code=224
+creating hex file from "NgatNgoai_7Seg"...
+"NgatNgoai_7Seg" - 0 Error(s), 0 Warning(s).

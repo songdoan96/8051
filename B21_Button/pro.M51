@@ -1,0 +1,120 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/18/2020  11:10:30  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj, .\delay.obj TO pro RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  .\delay.obj (DELAY)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  pro (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0001H     UNIT         _DATA_GROUP_
+            IDATA   0009H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0020H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    0023H     001FH     UNIT         ?PR?DELAY1SVAQUETPHIM?MAIN
+            CODE    0042H     0011H     UNIT         ?PR?MAIN?MAIN
+            CODE    0053H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   pro (MAIN)
+
+
+SEGMENT                              DATA_GROUP 
+  +--> CALLED SEGMENT              START    LENGTH
+--------------------------------------------------
+?C_C51STARTUP                      -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                      -----    -----
+  +--> ?PR?DELAY1SVAQUETPHIM?MAIN
+
+?PR?DELAY1SVAQUETPHIM?MAIN         0008H    0001H
+  +--> ?PR?_DELAY_MS?DELAY
+
+
+
+SYMBOL TABLE OF MODULE:  pro (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/18/2020  11:10:30  PAGE 2
+
+
+  D:00A0H         PUBLIC        P2
+  B:0090H.0       PUBLIC        START
+  C:0023H         PUBLIC        delay1sVaQuetPhim
+  C:0042H         PUBLIC        main
+  B:0090H.1       PUBLIC        STOP
+  -------         PROC          DELAY1SVAQUETPHIM
+  -------         DO            
+  D:0008H         SYMBOL        i
+  -------         ENDDO         
+  C:0023H         LINE#         8
+  C:0023H         LINE#         10
+  C:0026H         LINE#         11
+  C:0026H         LINE#         12
+  C:002DH         LINE#         13
+  C:0030H         LINE#         14
+  C:0033H         LINE#         15
+  C:0036H         LINE#         16
+  C:0036H         LINE#         17
+  C:003FH         LINE#         18
+  C:0041H         LINE#         19
+  -------         ENDPROC       DELAY1SVAQUETPHIM
+  -------         PROC          MAIN
+  C:0042H         LINE#         21
+  C:0042H         LINE#         22
+  C:0042H         LINE#         23
+  C:0045H         LINE#         24
+  C:0045H         LINE#         25
+  C:0045H         LINE#         26
+  C:0048H         LINE#         27
+  C:0048H         LINE#         28
+  C:004BH         LINE#         29
+  C:0051H         LINE#         30
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0003H         PUBLIC        _delay_ms
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        x
+  D:0002H         SYMBOL        y
+  -------         ENDDO         
+  C:0003H         LINE#         5
+  C:0003H         LINE#         6
+  C:0003H         LINE#         8
+  C:000DH         LINE#         9
+  C:000DH         LINE#         10
+  C:001BH         LINE#         11
+  C:0022H         LINE#         12
+  -------         ENDPROC       _DELAY_MS
+  -------         ENDMOD        DELAY
+
+Program Size: data=10.0 xdata=0 code=95
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

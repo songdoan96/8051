@@ -1,0 +1,100 @@
+C51 COMPILER V9.01   MAIN                                                                  03/28/2020 10:25:50 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "main.h"
+   2          
+   3          
+   4          
+   5          void Uart_Init()
+   6          {
+   7   1        //Khoi tao UART Mode 1
+   8   1        SM0 = 0; SM1= 1;  //Chon Mode 1
+   9   1      
+  10   1        TMOD = 0x20;        // Timer1 hoat dong che do 8 bit tu dong nap lai
+  11   1        TH1 = 0xFD;         //Nap gia tri vao th1 dua vao bang tra cuu ( f thach anh: 11059200 )  - Toc do baud 9600
+  12   1        TR1 = 1;            //Timer bat dau chay
+  13   1        TI = 1;             //San sang gui dl
+  14   1      
+  15   1        REN = 1;            //Cho phep nhan dl
+  16   1      }
+  17          
+  18          void Uart_Write(char c)
+  19          {
+  20   1        while (TI == 0);    //Neu viec gui dl trc do chua hoan tat thi cho
+  21   1        TI = 0;
+  22   1        SBUF = c;         //Ghi dl
+  23   1      }
+  24          
+  25          void Uart_Write_Text(char *str)
+  26          {
+  27   1        unsigned char i = 0;
+  28   1        while (str[i] != 0)
+  29   1        {
+  30   2          Uart_Write(str[i]);
+  31   2          i++;
+  32   2        }
+  33   1      }
+  34          
+  35          //Nhan dl
+  36          char Uart_Data_Ready()
+  37          {
+  38   1        return RI;
+  39   1      }
+  40          char Uart_Read()
+  41          {
+  42   1        RI = 0;
+  43   1        return SBUF;
+  44   1      }
+  45          
+  46          void main()
+  47          {
+  48   1        char i;
+  49   1        Uart_Init();
+  50   1      
+  51   1      //  for(i='a';i<='z';i++){          //Gui dl
+  52   1      //    Uart_Write(i);
+  53   1      //    Delay_ms(100);
+  54   1      //  }  
+  55   1        while(1)
+C51 COMPILER V9.01   MAIN                                                                  03/28/2020 10:25:50 PAGE 2   
+
+  56   1        {
+  57   2      //    if(Uart_Data_Ready()==1){    //Doc dl tu terminal
+  58   2      //      P2 = Uart_Read();
+  59   2      //    }
+  60   2      
+  61   2      
+  62   2      //    Uart_Write_Text("Doan Song");        //gui dl string
+  63   2      
+  64   2      //Chuong trinh chuyen chu thuong thanh chu hoa
+  65   2          
+  66   2          Uart_Write_Text("Nhap vao ky tu in thuong: ");
+  67   2          while(Uart_Data_Ready()==0);
+  68   2          i = Uart_Read();
+  69   2          i = i - 32;         // Doi sang in hoa
+  70   2          Uart_Write_Text("->");  
+  71   2          Uart_Write(i);
+  72   2          Uart_Write_Text("\r\n");
+  73   2      
+  74   2        }
+  75   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    120    ----
+   CONSTANT SIZE    =     33    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

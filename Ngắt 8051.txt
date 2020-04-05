@@ -1,0 +1,14 @@
+	Ngắt trong 8051:
+
+- Thanh ghi IE (Interrupt Enable): cho phép ngắt hay không : bao gồm 8bit
+	
+	Bit | Tên | Địa chỉ | Chức năng|
+
+	7	| EA  |			| Cho phép(1)/Cấm(0) việc ngắt
+	6	|  -  |
+	5	|  -  |
+	4	| ES  |			| Ngắt truyền thông nối tiếp			// Enable Serial
+	3	| ET1 |			| Ngắt Timer 1							// Enable Timer 1
+	2	| EX1 |			| Ngắt ngoài 1							// Enable External
+	1	| ET0 |			| Ngắt Timer 0
+	0	| EX0 |			| Ngắt ngoài 0

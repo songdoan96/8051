@@ -1,0 +1,110 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/19/2020  20:30:29  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj, .\delay.obj TO ICChot74HC573 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  .\delay.obj (DELAY)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  ICChot74HC573 (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0001H     UNIT         _DATA_GROUP_
+            IDATA   0009H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0038H     UNIT         ?PR?MAIN?MAIN
+            CODE    003BH     0020H     UNIT         ?PR?_DELAY_MS?DELAY
+            CODE    005BH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0067H     000AH     UNIT         ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   ICChot74HC573 (MAIN)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                  0008H    0001H
+  +--> ?CO?MAIN
+  +--> ?PR?_DELAY_MS?DELAY
+
+
+
+SYMBOL TABLE OF MODULE:  ICChot74HC573 (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00B0H.0       PUBLIC        LED1
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/19/2020  20:30:29  PAGE 2
+
+
+  B:00B0H.1       PUBLIC        LED2
+  C:0003H         PUBLIC        main
+  C:0067H         PUBLIC        Code7Seg
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        i
+  -------         ENDDO         
+  C:0003H         LINE#         8
+  C:0003H         LINE#         9
+  C:0003H         LINE#         11
+  C:0007H         LINE#         12
+  C:0007H         LINE#         13
+  C:0007H         LINE#         14
+  C:000AH         LINE#         15
+  C:000AH         LINE#         16
+  C:0016H         LINE#         17
+  C:0018H         LINE#         18
+  C:001AH         LINE#         20
+  C:0025H         LINE#         21
+  C:0027H         LINE#         22
+  C:0029H         LINE#         23
+  C:0030H         LINE#         24
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:003BH         PUBLIC        _delay_ms
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        x
+  D:0002H         SYMBOL        y
+  -------         ENDDO         
+  C:003BH         LINE#         5
+  C:003BH         LINE#         6
+  C:003BH         LINE#         8
+  C:0045H         LINE#         9
+  C:0045H         LINE#         10
+  C:0053H         LINE#         11
+  C:005AH         LINE#         12
+  -------         ENDPROC       _DELAY_MS
+  -------         ENDMOD        DELAY
+
+Program Size: data=10.0 xdata=0 code=113
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,181 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\SongDoan\Desktop\8051\B58_Uart_Mode1_GiaoTiep2VDK\B58_Uart_Mode1_GiaoTiep2VDK.uvproj
+Project File Date:  03/28/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(14): error C141: syntax error near ';'
+MAIN.C(14): error C141: syntax error near '=='
+MAIN.C(14): error C141: syntax error near ')'
+MAIN.C(18): error C141: syntax error near ';'
+MAIN.C(18): error C141: syntax error near '=='
+MAIN.C(18): error C141: syntax error near ')'
+MAIN.C(20): error C141: syntax error near ';'
+MAIN.C(20): error C141: syntax error near '=='
+MAIN.C(20): error C141: syntax error near ')'
+MAIN.C(24): error C141: syntax error near ';'
+MAIN.C(24): error C141: syntax error near '=='
+MAIN.C(24): error C141: syntax error near ')'
+compiling UartMode1.c...
+compiling Delay.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(9): warning C280: 'i': unreferenced local variable
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?UARTMODE1
+Program Size: data=13.0 xdata=0 code=204
+creating hex file from "B58_Uart_Mode1_GiaoTiep2VDK"...
+"B58_Uart_Mode1_GiaoTiep2VDK" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(29): error C141: syntax error near '='
+MAIN.C(30): error C141: syntax error near '='
+compiling UartMode1.c...
+compiling Delay.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=12.0 xdata=0 code=183
+creating hex file from "B58_Uart_Mode1_GiaoTiep2VDK"...
+"B58_Uart_Mode1_GiaoTiep2VDK" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=13.0 xdata=0 code=189
+creating hex file from "B58_Uart_Mode1_GiaoTiep2VDK"...
+"B58_Uart_Mode1_GiaoTiep2VDK" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=13.0 xdata=0 code=189
+creating hex file from "B58_Uart_Mode1_GiaoTiep2VDK"...
+"B58_Uart_Mode1_GiaoTiep2VDK" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_DATA_READY?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_READ?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=13.0 xdata=0 code=183
+creating hex file from "B58_Uart_Mode1_GiaoTiep2VDK"...
+"B58_Uart_Mode1_GiaoTiep2VDK" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(9): warning C280: 'i': unreferenced local variable
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=13.0 xdata=0 code=192
+creating hex file from "B58_Uart_Mode1_GiaoTiep2VDK"...
+"B58_Uart_Mode1_GiaoTiep2VDK" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(9): warning C280: 'i': unreferenced local variable
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=13.0 xdata=0 code=192
+creating hex file from "B58_Uart_Mode1_GiaoTiep2VDK"...
+"B58_Uart_Mode1_GiaoTiep2VDK" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(9): warning C280: 'i': unreferenced local variable
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: K1LMC-M4NLSC
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+".\UartMode1.obj",
+".\Delay.obj" 
+TO "B58_Uart_Mode1_GiaoTiep2VDK" 
+RAMSIZE(256) 
+ru 
+*** FATAL ERROR L204: INVALID KEYWORD
+    POS: 99
+    Mode1.obj, .\Delay.obj TO B58_Uart_Mode1_GiaoTiep2VDK RAMSIZE (256) RU#
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(8): warning C280: 'i': unreferenced local variable
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: K1LMC-M4NLSC
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+"main.obj",
+".\UartMode1.obj",
+".\Delay.obj" 
+TO "B58_Uart_Mode1_GiaoTiep2VDK" 
+RAMSIZE(256) 
+ru 
+*** FATAL ERROR L204: INVALID KEYWORD
+    POS: 99
+    Mode1.obj, .\Delay.obj TO B58_Uart_Mode1_GiaoTiep2VDK RAMSIZE (256) RU#
+Target not created
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(8): warning C280: 'i': unreferenced local variable
+compiling UartMode1.c...
+compiling Delay.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_WRITE_TEXT?UARTMODE1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?DELAY
+Program Size: data=13.0 xdata=0 code=192
+creating hex file from "B58_Uart_Mode1_GiaoTiep2VDK"...
+"B58_Uart_Mode1_GiaoTiep2VDK" - 0 Error(s), 3 Warning(s).

@@ -1,0 +1,69 @@
+C51 COMPILER V9.56.0.0   MAIN                                                              03/17/2020 21:24:29 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main
+                    -.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          #include "..\my_lib\delay.h"
+   3          
+   4          /*
+   5            Phép or dùng ðê bat/tat 1bit mà không thay ðoi trang thai cua cac bit khac
+   6            
+   7            P2 = P2 |( 1<<n ); set bit n len muc 1
+   8            
+   9          */
+  10          
+  11          
+  12          
+  13          void viDu(){
+  14   1        P2 = 0x2f; 
+  15   1        Delay_ms(2000);
+  16   1        P2 = P2 | (1<<6);  
+  17   1        Delay_ms(5000);
+  18   1      }
+  19          
+  20          void ledSangTraiPhai(){
+  21   1        unsigned char i,j;
+  22   1        P2 = 0x00;
+  23   1        for(i=0;i<8;i++){
+  24   2          Delay_ms(300);
+  25   2          P2 = P2 << 1;
+  26   2          P2 = P2|1;
+  27   2        }
+  28   1        
+  29   1        P2 = 0x00;
+  30   1        for(j=0;j<8;j++){
+  31   2          Delay_ms(300);
+  32   2          P2 = P2 >> 1;
+  33   2          P2 = P2|0x80;
+  34   2        }
+  35   1      }
+  36          
+  37          void main(){
+  38   1        while(1){
+  39   2          viDu();
+  40   2          ledSangTraiPhai();
+  41   2          Delay_ms(5000);
+  42   2        }
+  43   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     96    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+C51 COMPILER V9.56.0.0   MAIN                                                              03/17/2020 21:24:29 PAGE 2   
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

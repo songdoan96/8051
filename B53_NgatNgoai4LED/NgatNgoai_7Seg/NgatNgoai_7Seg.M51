@@ -1,0 +1,99 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/27/2020  08:37:19  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE main.obj TO NgatNgoai_7Seg RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  NgatNgoai_7Seg (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000BH     UNIT         ?DT?MAIN
+            IDATA   0013H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+            CODE    0006H     000DH     UNIT         ?C_INITSEG
+            CODE    0013H     0003H     ABSOLUTE     
+            CODE    0016H     008CH     UNIT         ?C_C51STARTUP
+            CODE    00A2H     0015H     UNIT         ?PR?ISR_EX0?MAIN
+            CODE    00B7H     0015H     UNIT         ?PR?ISR_EX1?MAIN
+            CODE    00CCH     0014H     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   NgatNgoai_7Seg (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+
+
+SYMBOL TABLE OF MODULE:  NgatNgoai_7Seg (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  B:00A8H.7       PUBLIC        EA
+  C:00A2H         PUBLIC        ISR_EX0
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/27/2020  08:37:19  PAGE 2
+
+
+  C:00B7H         PUBLIC        ISR_EX1
+  C:00CCH         PUBLIC        main
+  B:00A8H.0       PUBLIC        EX0
+  B:0088H.0       PUBLIC        IT0
+  B:00A8H.2       PUBLIC        EX1
+  B:0088H.2       PUBLIC        IT1
+  D:0008H         PUBLIC        i
+  D:0009H         PUBLIC        Led7Seg
+  -------         PROC          MAIN
+  C:00CCH         LINE#         5
+  C:00CCH         LINE#         6
+  C:00CCH         LINE#         7
+  C:00D0H         LINE#         8
+  C:00D4H         LINE#         9
+  C:00D6H         LINE#         11
+  C:00D6H         LINE#         12
+  C:00D6H         LINE#         13
+  C:00DEH         LINE#         14
+  -------         ENDPROC       MAIN
+  -------         PROC          ISR_EX0
+  C:00A2H         LINE#         18
+  C:00A6H         LINE#         20
+  C:00A8H         LINE#         21
+  C:00B2H         LINE#         22
+  -------         ENDPROC       ISR_EX0
+  -------         PROC          ISR_EX1
+  C:00B7H         LINE#         24
+  C:00BBH         LINE#         26
+  C:00BDH         LINE#         27
+  C:00C7H         LINE#         28
+  -------         ENDPROC       ISR_EX1
+  -------         ENDMOD        MAIN
+
+Program Size: data=20.0 xdata=0 code=224
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

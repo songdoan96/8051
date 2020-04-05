@@ -1,0 +1,4 @@
+"main.obj",
+".\UartMode1.obj" 
+TO "B56_UART_Mode1" 
+RAMSIZE(256) 

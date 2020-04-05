@@ -1,0 +1,5 @@
+"main.obj",
+".\UartMode1.obj",
+".\Delay.obj" 
+TO "B58_Uart_Mode1_GiaoTiep2VDK" 
+RAMSIZE(256) 

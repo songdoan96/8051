@@ -1,0 +1,8 @@
+"main.obj",
+".\Delay.obj",
+".\Rtc_Ds1307.obj",
+".\LunarCalendar.obj",
+".\Soft_I2C.obj",
+".\LCD4.obj" 
+TO "B52_NgatNgoai_INT1" 
+RAMSIZE(256) 

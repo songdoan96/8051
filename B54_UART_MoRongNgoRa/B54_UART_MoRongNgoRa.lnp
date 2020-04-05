@@ -1,0 +1,4 @@
+"main.obj",
+".\Delay.obj" 
+TO "B54_UART_MoRongNgoRa" 
+RAMSIZE(256) 

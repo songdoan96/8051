@@ -1,0 +1,5 @@
+"main.obj",
+".\delay.obj",
+".\IE74595.obj" 
+TO "B39_UngDungLib74595" 
+RAMSIZE(256) 

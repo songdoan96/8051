@@ -1,0 +1,102 @@
+C51 COMPILER V9.01   MAIN                                                                  03/18/2020 21:19:00 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "main.h"
+   2          #include "../my_lib/delay.h"
+   3          #include "C:\Users\SongDoan\Desktop\8051\include\c++\tr1\ctime"
+*** WARNING C318 IN LINE 32 OF C:\Users\SongDoan\Desktop\8051\include\c++\tr1\ctime: can't open file 'ctime'
+   4          
+   5          unsigned char code Code7Seg[] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
+   6          sbit DO = P0^0;
+   7          sbit XANH = P0^1;
+   8          sbit VANG = P0^2;
+   9          #define CHUC P2
+  10          #define DV P3
+  11          
+  12          void main()
+  13          {
+  14   1        unsigned int i;
+  15   1        while(1)
+  16   1        {
+  17   2      
+  18   2          VANG = 1;
+  19   2          XANH = 1;
+  20   2          DO = 0;
+  21   2          for(i=15;i>0;i--)
+  22   2          {
+  23   3      
+  24   3            CHUC = Code7Seg[i/10];
+  25   3            DV=Code7Seg[i%10];
+  26   3      
+  27   3            delay_ms(1000);
+  28   3          }  
+  29   2      
+  30   2      
+  31   2          CHUC = Code7Seg[0];
+  32   2          DV=Code7Seg[0];
+  33   2          delay_ms(1000);
+  34   2      
+  35   2          VANG = 1;
+  36   2          XANH = 0;
+  37   2          DO = 1;
+  38   2          for(i=20;i>0;i--)
+  39   2          {
+  40   3            if(i==0)
+  41   3            {
+  42   4              CHUC = Code7Seg[0];
+  43   4              DV=Code7Seg[0];
+  44   4            }else{
+  45   4              CHUC = Code7Seg[i/10];
+  46   4              DV=Code7Seg[i%10];
+  47   4            }
+  48   3            delay_ms(1000);
+  49   3          }
+  50   2      
+  51   2      
+  52   2          CHUC = Code7Seg[i];
+  53   2          DV=Code7Seg[i];
+  54   2          delay_ms(1000);
+C51 COMPILER V9.01   MAIN                                                                  03/18/2020 21:19:00 PAGE 2   
+
+  55   2      
+  56   2          VANG = 0;
+  57   2          XANH = 1;
+  58   2          DO = 1;
+  59   2          for(i=5;i>0;i--)
+  60   2          {
+  61   3            if(i==0)
+  62   3            {
+  63   4              CHUC = Code7Seg[0];
+  64   4              DV=Code7Seg[0];
+  65   4            }else{
+  66   4              CHUC = Code7Seg[i/10];
+  67   4              DV=Code7Seg[i%10];
+  68   4            }
+  69   3            delay_ms(1000);
+  70   3          }
+  71   2      
+  72   2          CHUC = Code7Seg[i];
+  73   2          DV=Code7Seg[i];
+  74   2          delay_ms(1000);
+  75   2        }
+  76   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    352    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

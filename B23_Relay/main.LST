@@ -1,0 +1,47 @@
+C51 COMPILER V9.01   MAIN                                                                  03/18/2020 17:50:39 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "main.h"
+   2          #include "../my_lib/delay.h"
+   3          
+   4          sbit BTNnpn = P1^0; 
+   5          sbit BTNpnp = P1^1; 
+   6          sbit RLnpn = P2^0;
+   7          sbit RLpnp = P3^7;
+   8          
+   9          void main()
+  10          {
+  11   1        RLnpn = 0;
+  12   1        RLpnp = 0;
+  13   1        while(1)
+  14   1        {
+  15   2          if (BTNnpn==0){
+  16   3            RLnpn = !RLnpn;
+  17   3            while(BTNnpn==0);
+  18   3          }
+  19   2          if (BTNpnp==0){
+  20   3            RLpnp = !RLpnp;
+  21   3            while(BTNpnp==0);
+  22   3          }
+  23   2        }
+  24   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     22    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
