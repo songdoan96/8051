@@ -1,0 +1,24 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\SongDoan\Desktop\8051\B74_Timer2_MatXung\B74_Timer2_MatXung.uvproj
+Project File Date:  04/07/2020
+
+<h2>Output:</h2>
+Build target 'Target 1'
+Target has no object modules
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=47
+creating hex file from "B74_Timer2_MatXung"...
+"B74_Timer2_MatXung" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=53
+creating hex file from "B74_Timer2_MatXung"...
+"B74_Timer2_MatXung" - 0 Error(s), 0 Warning(s).
