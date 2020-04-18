@@ -9,6 +9,5 @@ void main()
     {  
         delay_ms(1000);
         P2 = ~P2;
-        
     }
 }
