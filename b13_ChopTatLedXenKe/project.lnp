@@ -1,4 +1,0 @@
-"main.obj",
-".\Delay.obj" 
-TO "project" 
-RAMSIZE(256) 
